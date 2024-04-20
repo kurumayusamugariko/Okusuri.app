@@ -1,0 +1,614 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C602663D2BD435F60074A3BB /* Okusuri_appApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C602663C2BD435F60074A3BB /* Okusuri_appApp.swift */; };
+		C602663F2BD435F60074A3BB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C602663E2BD435F60074A3BB /* ContentView.swift */; };
+		C60266412BD435F70074A3BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C60266402BD435F70074A3BB /* Assets.xcassets */; };
+		C60266452BD435F70074A3BB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C60266442BD435F70074A3BB /* Preview Assets.xcassets */; };
+		C602664F2BD435F70074A3BB /* Okusuri_appTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C602664E2BD435F70074A3BB /* Okusuri_appTests.swift */; };
+		C60266592BD435F70074A3BB /* Okusuri_appUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C60266582BD435F70074A3BB /* Okusuri_appUITests.swift */; };
+		C602665B2BD435F70074A3BB /* Okusuri_appUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C602665A2BD435F70074A3BB /* Okusuri_appUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C602664B2BD435F70074A3BB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C60266312BD435F60074A3BB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C60266382BD435F60074A3BB;
+			remoteInfo = Okusuri.app;
+		};
+		C60266552BD435F70074A3BB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C60266312BD435F60074A3BB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C60266382BD435F60074A3BB;
+			remoteInfo = Okusuri.app;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C60266392BD435F60074A3BB /* Okusuri.app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Okusuri.app.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C602663C2BD435F60074A3BB /* Okusuri_appApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Okusuri_appApp.swift; sourceTree = "<group>"; };
+		C602663E2BD435F60074A3BB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C60266402BD435F70074A3BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C60266422BD435F70074A3BB /* Okusuri_app.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Okusuri_app.entitlements; sourceTree = "<group>"; };
+		C60266442BD435F70074A3BB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C602664A2BD435F70074A3BB /* Okusuri.appTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Okusuri.appTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C602664E2BD435F70074A3BB /* Okusuri_appTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Okusuri_appTests.swift; sourceTree = "<group>"; };
+		C60266542BD435F70074A3BB /* Okusuri.appUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Okusuri.appUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C60266582BD435F70074A3BB /* Okusuri_appUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Okusuri_appUITests.swift; sourceTree = "<group>"; };
+		C602665A2BD435F70074A3BB /* Okusuri_appUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Okusuri_appUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C60266362BD435F60074A3BB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C60266472BD435F70074A3BB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C60266512BD435F70074A3BB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C60266302BD435F60074A3BB = {
+			isa = PBXGroup;
+			children = (
+				C602663B2BD435F60074A3BB /* Okusuri.app */,
+				C602664D2BD435F70074A3BB /* Okusuri.appTests */,
+				C60266572BD435F70074A3BB /* Okusuri.appUITests */,
+				C602663A2BD435F60074A3BB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C602663A2BD435F60074A3BB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C60266392BD435F60074A3BB /* Okusuri.app.app */,
+				C602664A2BD435F70074A3BB /* Okusuri.appTests.xctest */,
+				C60266542BD435F70074A3BB /* Okusuri.appUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C602663B2BD435F60074A3BB /* Okusuri.app */ = {
+			isa = PBXGroup;
+			children = (
+				C602663C2BD435F60074A3BB /* Okusuri_appApp.swift */,
+				C602663E2BD435F60074A3BB /* ContentView.swift */,
+				C60266402BD435F70074A3BB /* Assets.xcassets */,
+				C60266422BD435F70074A3BB /* Okusuri_app.entitlements */,
+				C60266432BD435F70074A3BB /* Preview Content */,
+			);
+			path = Okusuri.app;
+			sourceTree = "<group>";
+		};
+		C60266432BD435F70074A3BB /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				C60266442BD435F70074A3BB /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C602664D2BD435F70074A3BB /* Okusuri.appTests */ = {
+			isa = PBXGroup;
+			children = (
+				C602664E2BD435F70074A3BB /* Okusuri_appTests.swift */,
+			);
+			path = Okusuri.appTests;
+			sourceTree = "<group>";
+		};
+		C60266572BD435F70074A3BB /* Okusuri.appUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C60266582BD435F70074A3BB /* Okusuri_appUITests.swift */,
+				C602665A2BD435F70074A3BB /* Okusuri_appUITestsLaunchTests.swift */,
+			);
+			path = Okusuri.appUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C60266382BD435F60074A3BB /* Okusuri.app */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C602665E2BD435F70074A3BB /* Build configuration list for PBXNativeTarget "Okusuri.app" */;
+			buildPhases = (
+				C60266352BD435F60074A3BB /* Sources */,
+				C60266362BD435F60074A3BB /* Frameworks */,
+				C60266372BD435F60074A3BB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Okusuri.app;
+			productName = Okusuri.app;
+			productReference = C60266392BD435F60074A3BB /* Okusuri.app.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C60266492BD435F70074A3BB /* Okusuri.appTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C60266612BD435F70074A3BB /* Build configuration list for PBXNativeTarget "Okusuri.appTests" */;
+			buildPhases = (
+				C60266462BD435F70074A3BB /* Sources */,
+				C60266472BD435F70074A3BB /* Frameworks */,
+				C60266482BD435F70074A3BB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C602664C2BD435F70074A3BB /* PBXTargetDependency */,
+			);
+			name = Okusuri.appTests;
+			productName = Okusuri.appTests;
+			productReference = C602664A2BD435F70074A3BB /* Okusuri.appTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C60266532BD435F70074A3BB /* Okusuri.appUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C60266642BD435F70074A3BB /* Build configuration list for PBXNativeTarget "Okusuri.appUITests" */;
+			buildPhases = (
+				C60266502BD435F70074A3BB /* Sources */,
+				C60266512BD435F70074A3BB /* Frameworks */,
+				C60266522BD435F70074A3BB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C60266562BD435F70074A3BB /* PBXTargetDependency */,
+			);
+			name = Okusuri.appUITests;
+			productName = Okusuri.appUITests;
+			productReference = C60266542BD435F70074A3BB /* Okusuri.appUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C60266312BD435F60074A3BB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					C60266382BD435F60074A3BB = {
+						CreatedOnToolsVersion = 15.3;
+					};
+					C60266492BD435F70074A3BB = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = C60266382BD435F60074A3BB;
+					};
+					C60266532BD435F70074A3BB = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = C60266382BD435F60074A3BB;
+					};
+				};
+			};
+			buildConfigurationList = C60266342BD435F60074A3BB /* Build configuration list for PBXProject "Okusuri.app" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C60266302BD435F60074A3BB;
+			productRefGroup = C602663A2BD435F60074A3BB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C60266382BD435F60074A3BB /* Okusuri.app */,
+				C60266492BD435F70074A3BB /* Okusuri.appTests */,
+				C60266532BD435F70074A3BB /* Okusuri.appUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C60266372BD435F60074A3BB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C60266452BD435F70074A3BB /* Preview Assets.xcassets in Resources */,
+				C60266412BD435F70074A3BB /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C60266482BD435F70074A3BB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C60266522BD435F70074A3BB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C60266352BD435F60074A3BB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C602663F2BD435F60074A3BB /* ContentView.swift in Sources */,
+				C602663D2BD435F60074A3BB /* Okusuri_appApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C60266462BD435F70074A3BB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C602664F2BD435F70074A3BB /* Okusuri_appTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C60266502BD435F70074A3BB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C60266592BD435F70074A3BB /* Okusuri_appUITests.swift in Sources */,
+				C602665B2BD435F70074A3BB /* Okusuri_appUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C602664C2BD435F70074A3BB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C60266382BD435F60074A3BB /* Okusuri.app */;
+			targetProxy = C602664B2BD435F70074A3BB /* PBXContainerItemProxy */;
+		};
+		C60266562BD435F70074A3BB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C60266382BD435F60074A3BB /* Okusuri.app */;
+			targetProxy = C60266552BD435F70074A3BB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		C602665C2BD435F70074A3BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C602665D2BD435F70074A3BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		C602665F2BD435F70074A3BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Okusuri.app/Okusuri_app.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Okusuri.app/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "mid.Okusuri-app";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C60266602BD435F70074A3BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Okusuri.app/Okusuri_app.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Okusuri.app/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "mid.Okusuri-app";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C60266622BD435F70074A3BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "mid.Okusuri-appTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Okusuri.app.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Okusuri.app";
+			};
+			name = Debug;
+		};
+		C60266632BD435F70074A3BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "mid.Okusuri-appTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Okusuri.app.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Okusuri.app";
+			};
+			name = Release;
+		};
+		C60266652BD435F70074A3BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "mid.Okusuri-appUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Okusuri.app;
+			};
+			name = Debug;
+		};
+		C60266662BD435F70074A3BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "mid.Okusuri-appUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Okusuri.app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C60266342BD435F60074A3BB /* Build configuration list for PBXProject "Okusuri.app" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C602665C2BD435F70074A3BB /* Debug */,
+				C602665D2BD435F70074A3BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C602665E2BD435F70074A3BB /* Build configuration list for PBXNativeTarget "Okusuri.app" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C602665F2BD435F70074A3BB /* Debug */,
+				C60266602BD435F70074A3BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C60266612BD435F70074A3BB /* Build configuration list for PBXNativeTarget "Okusuri.appTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C60266622BD435F70074A3BB /* Debug */,
+				C60266632BD435F70074A3BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C60266642BD435F70074A3BB /* Build configuration list for PBXNativeTarget "Okusuri.appUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C60266652BD435F70074A3BB /* Debug */,
+				C60266662BD435F70074A3BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C60266312BD435F60074A3BB /* Project object */;
+}
