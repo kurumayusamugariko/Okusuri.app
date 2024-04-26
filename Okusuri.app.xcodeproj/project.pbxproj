@@ -109,6 +109,44 @@
 			path = model;
 			sourceTree = "<group>";
 		};
+		A1541F652BDBC96000C5E36A /* medecine */ = {
+			isa = PBXGroup;
+			children = (
+				A1541F5C2BDAB35000C5E36A /* addMedicine.swift */,
+				A1541F612BDBA81300C5E36A /* info_medicine.swift */,
+			);
+			path = medecine;
+			sourceTree = "<group>";
+		};
+		A1541F662BDBC98A00C5E36A /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				A1541F632BDBA8C700C5E36A /* Home.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		A1541F672BDBC9DA00C5E36A /* Hospital */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Hospital;
+			sourceTree = "<group>";
+		};
+		A1541F692BDBCA2600C5E36A /* allergy */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = allergy;
+			sourceTree = "<group>";
+		};
+		A1541F6A2BDBCA4200C5E36A /* Medical_history */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Medical_history;
+			sourceTree = "<group>";
+		};
 		C60266302BD435F60074A3BB = {
 			isa = PBXGroup;
 			children = (
@@ -135,14 +173,16 @@
 		C602663B2BD435F60074A3BB /* Okusuri.app */ = {
 			isa = PBXGroup;
 			children = (
-				A1541F5C2BDAB35000C5E36A /* addMedicine.swift */,
+				A1541F6A2BDBCA4200C5E36A /* Medical_history */,
+				A1541F692BDBCA2600C5E36A /* allergy */,
+				A1541F672BDBC9DA00C5E36A /* Hospital */,
+				A1541F662BDBC98A00C5E36A /* Home */,
+				A1541F652BDBC96000C5E36A /* medecine */,
 				C602663C2BD435F60074A3BB /* Okusuri_appApp.swift */,
 				C602663E2BD435F60074A3BB /* ContentView.swift */,
 				C60266402BD435F70074A3BB /* Assets.xcassets */,
 				C60266422BD435F70074A3BB /* Okusuri_app.entitlements */,
 				C60266432BD435F70074A3BB /* Preview Content */,
-				A1541F612BDBA81300C5E36A /* info_medicine.swift */,
-				A1541F632BDBA8C700C5E36A /* Home.swift */,
 			);
 			path = Okusuri.app;
 			sourceTree = "<group>";
