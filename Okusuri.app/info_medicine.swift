@@ -46,6 +46,12 @@ struct info_medicine: View {
                             Text(card.hospital_name)
                             Text(card.explain)
                         }
+                        .contentShape(RoundedRectangle(cornerRadius: 10))
+                        .contextMenu(menuItems: {
+                            Button(action: {modelData.deleteData(object: card)}, label: {
+                                Text("Delete")
+                            })
+                        })
                         
                     }.padding()
                 }

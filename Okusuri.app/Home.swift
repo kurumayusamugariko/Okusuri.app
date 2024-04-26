@@ -20,22 +20,30 @@ struct Home: View {
         VStack {
             
             HStack {
-                Button("飲んでいる薬") {
-                    info_medicine()
+                NavigationView {
+                    NavigationLink(destination: info_medicine()) {
+                        Text("飲んでいるお薬")
+                    }
                 }
                 
-                Button("病院一覧") {
-                    /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/ /*@END_MENU_TOKEN@*/
+                NavigationView {
+                    NavigationLink(destination: info_medicine()) {
+                        Text("病院一覧")
+                    }
                 }
             }
             
             HStack {
-                Button("病歴") {
-                    /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/ /*@END_MENU_TOKEN@*/
+                NavigationView {
+                    NavigationLink(destination: info_medicine()) {
+                        Text("病歴")
+                    }
                 }
                 
-                Button("アレルギー一覧") {
-                    /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/ /*@END_MENU_TOKEN@*/
+                NavigationView {
+                    NavigationLink(destination: info_medicine()) {
+                        Text("アレルギー一覧")
+                    }
                 }
             }
             

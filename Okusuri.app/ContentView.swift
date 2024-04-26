@@ -20,7 +20,7 @@ struct ContentView: View {
     }()
     
     var body: some View {
-        Text("お薬リスト")
+        info_medicine()
     }
 }
 

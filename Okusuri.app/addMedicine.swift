@@ -6,6 +6,7 @@ struct addMedicine: View {
     @State var hospitalName = ""
     @State var explain = ""
     @ObservedObject var modelDB : DB
+    @Environment(\.presentationMode) var presentation
     
     init(modelDB: DB) {
         self.modelDB = modelDB
@@ -32,9 +33,12 @@ struct addMedicine: View {
                 .textFieldStyle(RoundedBorderTextFieldStyle())
                 .padding(.all)
             
-            Button("追加") {
-                modelDB.addData()
-            }
+//            Button("追加") {
+//                modelDB.addData(presentation: presentation)
+//            }
+            Button(action: {modelDB.addData(presentation: presentation)}, label: {
+                Text("追加")
+            })
         }
     }
 }

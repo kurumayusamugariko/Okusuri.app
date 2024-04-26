@@ -15,6 +15,8 @@ class DB: ObservableObject{
     //realmに書き込む
     @Published var cards : [Card] = []
     
+    @Published var updateObject : Card?
+    
     init() {
         fetchData()
     }
@@ -36,7 +38,7 @@ class DB: ObservableObject{
     }
     
     //realmを使えるように設定
-    func addData() {
+    func addData(presentation: Binding<PresentationMode>) {
         
         let card = Card()
         card.dates = selectedDate
@@ -59,5 +61,16 @@ class DB: ObservableObject{
             fetchData()
         }
         
+        presentation.wrappedValue.dismiss()
     }
+    
+    func deleteData(object: Card) {
+        guard let dbRef = try? Realm() else { return }
+        
+        try? dbRef.write {
+            dbRef.delete(object)
+            fetchData()
+        }
+    }
+        
 }
