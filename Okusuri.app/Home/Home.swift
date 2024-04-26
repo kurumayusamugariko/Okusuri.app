@@ -24,7 +24,7 @@ struct Home: View {
                         Text("飲んでいるお薬")
                     } .padding(.all, 10)
                     
-                    NavigationLink{ info_medicine()} label:{
+                    NavigationLink{ Hospital()} label:{
                         Text("病院一覧")
                     } .padding(.all, 10)
                 }
@@ -32,13 +32,13 @@ struct Home: View {
                 
                 HStack {
                     
-                    NavigationLink{ info_medicine()} label:{
+                    NavigationLink{ Medical_history()} label:{
                         Text("病歴")
                     } .padding(.all, 10)
                     
                     
                     
-                    NavigationLink{ info_medicine()} label:{
+                    NavigationLink{ allergy()} label:{
                         Text("アレルギー一覧")
                     } .padding(.all, 10)
                 }
