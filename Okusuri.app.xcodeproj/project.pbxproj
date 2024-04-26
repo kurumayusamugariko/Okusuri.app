@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A1541F302BD7798900C5E36A /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = A1541F2F2BD7798900C5E36A /* Realm */; };
+		A1541F322BD7798900C5E36A /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = A1541F312BD7798900C5E36A /* RealmSwift */; };
+		A1541F352BDAA30A00C5E36A /* DB.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1541F342BDAA30A00C5E36A /* DB.swift */; };
+		A1541F5D2BDAB35000C5E36A /* addMedicine.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1541F5C2BDAB35000C5E36A /* addMedicine.swift */; };
+		A1541F602BDB7DBA00C5E36A /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1541F5F2BDB7DBA00C5E36A /* Card.swift */; };
+		A1541F622BDBA81400C5E36A /* info_medicine.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1541F612BDBA81300C5E36A /* info_medicine.swift */; };
+		A1541F642BDBA8C700C5E36A /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1541F632BDBA8C700C5E36A /* Home.swift */; };
 		C602663D2BD435F60074A3BB /* Okusuri_appApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C602663C2BD435F60074A3BB /* Okusuri_appApp.swift */; };
 		C602663F2BD435F60074A3BB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C602663E2BD435F60074A3BB /* ContentView.swift */; };
 		C60266412BD435F70074A3BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C60266402BD435F70074A3BB /* Assets.xcassets */; };
@@ -34,6 +41,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A1541F342BDAA30A00C5E36A /* DB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DB.swift; sourceTree = "<group>"; };
+		A1541F5C2BDAB35000C5E36A /* addMedicine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addMedicine.swift; sourceTree = "<group>"; };
+		A1541F5F2BDB7DBA00C5E36A /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		A1541F612BDBA81300C5E36A /* info_medicine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = info_medicine.swift; sourceTree = "<group>"; };
+		A1541F632BDBA8C700C5E36A /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		C60266392BD435F60074A3BB /* Okusuri.app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Okusuri.app.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C602663C2BD435F60074A3BB /* Okusuri_appApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Okusuri_appApp.swift; sourceTree = "<group>"; };
 		C602663E2BD435F60074A3BB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -52,6 +64,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1541F322BD7798900C5E36A /* RealmSwift in Frameworks */,
+				A1541F302BD7798900C5E36A /* Realm in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,13 +86,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A1541F2A2BD7679100C5E36A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A1541F332BDAA0EF00C5E36A /* DB */ = {
+			isa = PBXGroup;
+			children = (
+				A1541F342BDAA30A00C5E36A /* DB.swift */,
+			);
+			path = DB;
+			sourceTree = "<group>";
+		};
+		A1541F5E2BDB7D9700C5E36A /* model */ = {
+			isa = PBXGroup;
+			children = (
+				A1541F5F2BDB7DBA00C5E36A /* Card.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
 		C60266302BD435F60074A3BB = {
 			isa = PBXGroup;
 			children = (
+				A1541F5E2BDB7D9700C5E36A /* model */,
+				A1541F332BDAA0EF00C5E36A /* DB */,
 				C602663B2BD435F60074A3BB /* Okusuri.app */,
 				C602664D2BD435F70074A3BB /* Okusuri.appTests */,
 				C60266572BD435F70074A3BB /* Okusuri.appUITests */,
 				C602663A2BD435F60074A3BB /* Products */,
+				A1541F2A2BD7679100C5E36A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -95,11 +135,14 @@
 		C602663B2BD435F60074A3BB /* Okusuri.app */ = {
 			isa = PBXGroup;
 			children = (
+				A1541F5C2BDAB35000C5E36A /* addMedicine.swift */,
 				C602663C2BD435F60074A3BB /* Okusuri_appApp.swift */,
 				C602663E2BD435F60074A3BB /* ContentView.swift */,
 				C60266402BD435F70074A3BB /* Assets.xcassets */,
 				C60266422BD435F70074A3BB /* Okusuri_app.entitlements */,
 				C60266432BD435F70074A3BB /* Preview Content */,
+				A1541F612BDBA81300C5E36A /* info_medicine.swift */,
+				A1541F632BDBA8C700C5E36A /* Home.swift */,
 			);
 			path = Okusuri.app;
 			sourceTree = "<group>";
@@ -145,6 +188,10 @@
 			dependencies = (
 			);
 			name = Okusuri.app;
+			packageProductDependencies = (
+				A1541F2F2BD7798900C5E36A /* Realm */,
+				A1541F312BD7798900C5E36A /* RealmSwift */,
+			);
 			productName = Okusuri.app;
 			productReference = C60266392BD435F60074A3BB /* Okusuri.app.app */;
 			productType = "com.apple.product-type.application";
@@ -217,6 +264,9 @@
 				Base,
 			);
 			mainGroup = C60266302BD435F60074A3BB;
+			packageReferences = (
+				A1541F292BD7677A00C5E36A /* XCRemoteSwiftPackageReference "realm-swift" */,
+			);
 			productRefGroup = C602663A2BD435F60074A3BB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -260,7 +310,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				C602663F2BD435F60074A3BB /* ContentView.swift in Sources */,
+				A1541F622BDBA81400C5E36A /* info_medicine.swift in Sources */,
 				C602663D2BD435F60074A3BB /* Okusuri_appApp.swift in Sources */,
+				A1541F602BDB7DBA00C5E36A /* Card.swift in Sources */,
+				A1541F352BDAA30A00C5E36A /* DB.swift in Sources */,
+				A1541F5D2BDAB35000C5E36A /* addMedicine.swift in Sources */,
+				A1541F642BDBA8C700C5E36A /* Home.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,7 +479,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Okusuri.app/Preview Content\"";
-				DEVELOPMENT_TEAM = LC44DUDZWQ;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
@@ -464,7 +519,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Okusuri.app/Preview Content\"";
-				DEVELOPMENT_TEAM = LC44DUDZWQ;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
@@ -627,6 +682,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A1541F292BD7677A00C5E36A /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.49.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A1541F2F2BD7798900C5E36A /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A1541F292BD7677A00C5E36A /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = Realm;
+		};
+		A1541F312BD7798900C5E36A /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A1541F292BD7677A00C5E36A /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C60266312BD435F60074A3BB /* Project object */;
 }
