@@ -32,6 +32,7 @@
 		C602664F2BD435F70074A3BB /* Okusuri_appTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C602664E2BD435F70074A3BB /* Okusuri_appTests.swift */; };
 		C60266592BD435F70074A3BB /* Okusuri_appUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C60266582BD435F70074A3BB /* Okusuri_appUITests.swift */; };
 		C602665B2BD435F70074A3BB /* Okusuri_appUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C602665A2BD435F70074A3BB /* Okusuri_appUITestsLaunchTests.swift */; };
+		C6DE66BC2BDD5E9A004F4F78 /* editHospital.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6DE66BB2BDD5E9A004F4F78 /* editHospital.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +80,7 @@
 		C60266542BD435F70074A3BB /* Okusuri.appUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Okusuri.appUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C60266582BD435F70074A3BB /* Okusuri_appUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Okusuri_appUITests.swift; sourceTree = "<group>"; };
 		C602665A2BD435F70074A3BB /* Okusuri_appUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Okusuri_appUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C6DE66BB2BDD5E9A004F4F78 /* editHospital.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = editHospital.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +160,7 @@
 			children = (
 				A1541F6B2BDBCEBD00C5E36A /* Hospital.swift */,
 				A1541F712BDC090B00C5E36A /* addHospital.swift */,
+				C6DE66BB2BDD5E9A004F4F78 /* editHospital.swift */,
 			);
 			path = Hospital;
 			sourceTree = "<group>";
@@ -385,6 +388,7 @@
 				C602663F2BD435F60074A3BB /* ContentView.swift in Sources */,
 				A1541F762BDCF60900C5E36A /* AddMedical_history.swift in Sources */,
 				A1541F622BDBA81400C5E36A /* info_medicine.swift in Sources */,
+				C6DE66BC2BDD5E9A004F4F78 /* editHospital.swift in Sources */,
 				A1541F812BDD4BE300C5E36A /* DB5.swift in Sources */,
 				C602663D2BD435F60074A3BB /* Okusuri_appApp.swift in Sources */,
 				A1541F6E2BDBCEF400C5E36A /* allergy.swift in Sources */,

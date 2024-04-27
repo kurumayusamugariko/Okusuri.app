@@ -74,5 +74,21 @@ class DB3: ObservableObject{
             fetchData()
         }
     }
+    
+    func editData(object: Card2){
+       guard let dbRef = try? Realm() else { return }
+    
+        try? dbRef.write {
+            object.dates = selectedDate
+            object.name = name
+            object.number = number
+            object.favorite = favorite
+            
+//            print("dates:", object.dates)
+//            print("hospital_name:", object.name)
+//            print("phonenumber:",object.number)
+//            print("データが更新されました")
+        } 
+    }
         
 }

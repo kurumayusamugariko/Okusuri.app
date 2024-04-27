@@ -10,6 +10,8 @@ import SwiftUI
 struct Hospital: View {
     @StateObject var modelData = DB3()
     @State private var isShowingAddMedicine = false
+    @State private var isShowingEditMedicine = false
+    @State private var cardToEdit: Card2?
     
     let dateFormatter: DateFormatter = {
         let formatter = DateFormatter()
@@ -47,13 +49,29 @@ struct Hospital: View {
                         .contentShape(RoundedRectangle(cornerRadius: 10))
                         .contextMenu(menuItems: {
                             Button(action: {modelData.deleteData(object: card)}, label: {
-                                Text("Delete")
+                                Text("削除")
+                                    .font(.title)
+                                    .foregroundColor(Color.red)
+                                    .multilineTextAlignment(.center)
                             })
+                            Button(action: {
+                                cardToEdit = card // 編集するカードを設定
+                                isShowingEditMedicine = true // 編集画面を表示
+                         
+                            }, label: {
+                                Text("編集")
+                            })
+                            Link(destination: URL(string: "tel:\(card.number)")!) {
+                            Text("電話をかける")
+                            Image(systemName: "phone").foregroundColor(.blue)
+                            }
                         })
                         
                     }.padding()
                 }
                 
+            }.sheet(isPresented: $isShowingEditMedicine) {
+                editHospital(modelDB: modelData, card: $cardToEdit)
             }
 
         }
