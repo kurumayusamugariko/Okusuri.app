@@ -21,7 +21,10 @@ struct Hospital: View {
     
     var body: some View {
         VStack {
-            Text("病院リスト")
+            Text("病院一覧")
+                .font(.title)
+                .fontWeight(.bold)
+                .foregroundColor(Color(hue: 0.577, saturation: 0.631, brightness: 0.224))
             
             NavigationView {
                 Button(action: {
@@ -30,6 +33,7 @@ struct Hospital: View {
                     Text("病院を追加")
                         .foregroundColor(Color.white)
                         .padding(.all)
+                        .frame(width: /*@START_MENU_TOKEN@*/200.0/*@END_MENU_TOKEN@*/, height: /*@START_MENU_TOKEN@*/70.0/*@END_MENU_TOKEN@*/)
                         .background(.blue)
                         .cornerRadius(50.0)
                 }
@@ -37,14 +41,19 @@ struct Hospital: View {
                     addHospital(modelDB: modelData)
                 }
             }
+            .frame(width: /*@START_MENU_TOKEN@*/200.0/*@END_MENU_TOKEN@*/, height: 70)
+            
+            
+            
             
             ScrollView {
-                VStack {
+                VStack(alignment: .leading) {
                     ForEach(modelData.cards) { card in
                         HStack {
                             Text(self.dateFormatter.string(from: card.dates))
                             Text(card.name)
                             Text(card.number)
+                                .multilineTextAlignment(.leading)
                         }
                         .contentShape(RoundedRectangle(cornerRadius: 10))
                         .contextMenu(menuItems: {
@@ -67,8 +76,10 @@ struct Hospital: View {
                             }
                         })
                         
-                    }.padding()
+                    }
+                    .padding(/*@START_MENU_TOKEN@*/.vertical/*@END_MENU_TOKEN@*/)
                 }
+                .padding(/*@START_MENU_TOKEN@*/.top/*@END_MENU_TOKEN@*/)
                 
             }.sheet(isPresented: $isShowingEditMedicine) {
                 editHospital(modelDB: modelData, card: $cardToEdit)
