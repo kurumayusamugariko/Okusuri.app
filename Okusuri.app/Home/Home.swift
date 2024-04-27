@@ -89,7 +89,7 @@ struct Home: View {
                             }.padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/).border(/*@START_MENU_TOKEN@*/Color.yellow/*@END_MENU_TOKEN@*/, width: /*@START_MENU_TOKEN@*/2/*@END_MENU_TOKEN@*/).cornerRadius(/*@START_MENU_TOKEN@*/3.0/*@END_MENU_TOKEN@*/)
                         } .padding(.all, 10).frame(width: 170.0/*@END_MENU_TOKEN@*/, height: 170.0).background(Color.white).cornerRadius(/*@START_MENU_TOKEN@*/20.0/*@END_MENU_TOKEN@*/)
                     }
-                    Button(action: {}, label: {
+                        NavigationLink{ custam()} label:{
                         Text("カスタマイズ")
                             .fontWeight(.medium)
                             .multilineTextAlignment(.center)
@@ -98,7 +98,7 @@ struct Home: View {
                             .background(Color(hue: 0.101, saturation: 0.36, brightness: 0.926))
                             .cornerRadius(20.0)
                             .padding(/*@START_MENU_TOKEN@*/.all, 30.0/*@END_MENU_TOKEN@*/)
-                    })
+                        }
                     
                     
                     
@@ -106,7 +106,7 @@ struct Home: View {
                 
             }
             
-        }
+        }.navigationBarBackButtonHidden(true)
     }
 }
     

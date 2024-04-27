@@ -33,6 +33,8 @@
 		C60266592BD435F70074A3BB /* Okusuri_appUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C60266582BD435F70074A3BB /* Okusuri_appUITests.swift */; };
 		C602665B2BD435F70074A3BB /* Okusuri_appUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C602665A2BD435F70074A3BB /* Okusuri_appUITestsLaunchTests.swift */; };
 		C6DE66BC2BDD5E9A004F4F78 /* editHospital.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6DE66BB2BDD5E9A004F4F78 /* editHospital.swift */; };
+		C6DE66BE2BDD9F86004F4F78 /* custam.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6DE66BD2BDD9F86004F4F78 /* custam.swift */; };
+		C6DE66C02BDDA31D004F4F78 /* login.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6DE66BF2BDDA31D004F4F78 /* login.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +83,8 @@
 		C60266582BD435F70074A3BB /* Okusuri_appUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Okusuri_appUITests.swift; sourceTree = "<group>"; };
 		C602665A2BD435F70074A3BB /* Okusuri_appUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Okusuri_appUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		C6DE66BB2BDD5E9A004F4F78 /* editHospital.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = editHospital.swift; sourceTree = "<group>"; };
+		C6DE66BD2BDD9F86004F4F78 /* custam.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = custam.swift; sourceTree = "<group>"; };
+		C6DE66BF2BDDA31D004F4F78 /* login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = login.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -216,6 +220,8 @@
 				A1541F652BDBC96000C5E36A /* medecine */,
 				C602663C2BD435F60074A3BB /* Okusuri_appApp.swift */,
 				C602663E2BD435F60074A3BB /* ContentView.swift */,
+				C6DE66BD2BDD9F86004F4F78 /* custam.swift */,
+				C6DE66BF2BDDA31D004F4F78 /* login.swift */,
 				C60266402BD435F70074A3BB /* Assets.xcassets */,
 				C60266422BD435F70074A3BB /* Okusuri_app.entitlements */,
 				C60266432BD435F70074A3BB /* Preview Content */,
@@ -393,6 +399,7 @@
 				C602663D2BD435F60074A3BB /* Okusuri_appApp.swift in Sources */,
 				A1541F6E2BDBCEF400C5E36A /* allergy.swift in Sources */,
 				A1541F742BDCF5E600C5E36A /* addAllergy.swift in Sources */,
+				C6DE66BE2BDD9F86004F4F78 /* custam.swift in Sources */,
 				A1541F792BDD06F300C5E36A /* DB2.swift in Sources */,
 				A1541F7F2BDD499800C5E36A /* Name.swift in Sources */,
 				A1541F602BDB7DBA00C5E36A /* Card.swift in Sources */,
@@ -403,6 +410,7 @@
 				A1541F6C2BDBCEBD00C5E36A /* Hospital.swift in Sources */,
 				A1541F5D2BDAB35000C5E36A /* addMedicine.swift in Sources */,
 				A1541F7D2BDD0A1A00C5E36A /* DB4.swift in Sources */,
+				C6DE66C02BDDA31D004F4F78 /* login.swift in Sources */,
 				A1541F642BDBA8C700C5E36A /* Home.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

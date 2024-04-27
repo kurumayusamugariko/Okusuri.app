@@ -13,9 +13,11 @@ struct info_medicine: View {
     @State private var isShowingAddMedicine = false
     
     let dateFormatter: DateFormatter = {
-        let formatter = DateFormatter()
-        formatter.dateStyle = .long
-        return formatter
+    let formatter = DateFormatter()
+    formatter.dateStyle = .medium
+    formatter.timeStyle = .none
+    formatter.locale = Locale(identifier: "ja_JP")
+    return formatter
     }()
     
     var body: some View {
