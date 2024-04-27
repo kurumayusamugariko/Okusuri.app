@@ -7,6 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A1541F302BD7798900C5E36A /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = A1541F2F2BD7798900C5E36A /* Realm */; };
+		A1541F322BD7798900C5E36A /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = A1541F312BD7798900C5E36A /* RealmSwift */; };
+		A1541F352BDAA30A00C5E36A /* DB.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1541F342BDAA30A00C5E36A /* DB.swift */; };
+		A1541F5D2BDAB35000C5E36A /* addMedicine.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1541F5C2BDAB35000C5E36A /* addMedicine.swift */; };
+		A1541F602BDB7DBA00C5E36A /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1541F5F2BDB7DBA00C5E36A /* Card.swift */; };
+		A1541F622BDBA81400C5E36A /* info_medicine.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1541F612BDBA81300C5E36A /* info_medicine.swift */; };
+		A1541F642BDBA8C700C5E36A /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1541F632BDBA8C700C5E36A /* Home.swift */; };
+		A1541F6C2BDBCEBD00C5E36A /* Hospital.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1541F6B2BDBCEBD00C5E36A /* Hospital.swift */; };
+		A1541F6E2BDBCEF400C5E36A /* allergy.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1541F6D2BDBCEF400C5E36A /* allergy.swift */; };
+		A1541F702BDBCF1100C5E36A /* Medical_history.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1541F6F2BDBCF1100C5E36A /* Medical_history.swift */; };
+		A1541F722BDC090B00C5E36A /* addHospital.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1541F712BDC090B00C5E36A /* addHospital.swift */; };
+		A1541F742BDCF5E600C5E36A /* addAllergy.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1541F732BDCF5E600C5E36A /* addAllergy.swift */; };
+		A1541F762BDCF60900C5E36A /* AddMedical_history.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1541F752BDCF60900C5E36A /* AddMedical_history.swift */; };
+		A1541F792BDD06F300C5E36A /* DB2.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1541F782BDD06F300C5E36A /* DB2.swift */; };
+		A1541F7B2BDD0A0F00C5E36A /* DB3.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1541F7A2BDD0A0F00C5E36A /* DB3.swift */; };
+		A1541F7D2BDD0A1A00C5E36A /* DB4.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1541F7C2BDD0A1A00C5E36A /* DB4.swift */; };
 		C602663D2BD435F60074A3BB /* Okusuri_appApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C602663C2BD435F60074A3BB /* Okusuri_appApp.swift */; };
 		C602663F2BD435F60074A3BB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C602663E2BD435F60074A3BB /* ContentView.swift */; };
 		C60266412BD435F70074A3BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C60266402BD435F70074A3BB /* Assets.xcassets */; };
@@ -34,6 +50,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A1541F342BDAA30A00C5E36A /* DB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DB.swift; sourceTree = "<group>"; };
+		A1541F5C2BDAB35000C5E36A /* addMedicine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addMedicine.swift; sourceTree = "<group>"; };
+		A1541F5F2BDB7DBA00C5E36A /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		A1541F612BDBA81300C5E36A /* info_medicine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = info_medicine.swift; sourceTree = "<group>"; };
+		A1541F632BDBA8C700C5E36A /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		A1541F6B2BDBCEBD00C5E36A /* Hospital.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hospital.swift; sourceTree = "<group>"; };
+		A1541F6D2BDBCEF400C5E36A /* allergy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = allergy.swift; sourceTree = "<group>"; };
+		A1541F6F2BDBCF1100C5E36A /* Medical_history.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Medical_history.swift; sourceTree = "<group>"; };
+		A1541F712BDC090B00C5E36A /* addHospital.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addHospital.swift; sourceTree = "<group>"; };
+		A1541F732BDCF5E600C5E36A /* addAllergy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addAllergy.swift; sourceTree = "<group>"; };
+		A1541F752BDCF60900C5E36A /* AddMedical_history.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMedical_history.swift; sourceTree = "<group>"; };
+		A1541F782BDD06F300C5E36A /* DB2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DB2.swift; sourceTree = "<group>"; };
+		A1541F7A2BDD0A0F00C5E36A /* DB3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DB3.swift; sourceTree = "<group>"; };
+		A1541F7C2BDD0A1A00C5E36A /* DB4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DB4.swift; sourceTree = "<group>"; };
 		C60266392BD435F60074A3BB /* Okusuri.app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Okusuri.app.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C602663C2BD435F60074A3BB /* Okusuri_appApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Okusuri_appApp.swift; sourceTree = "<group>"; };
 		C602663E2BD435F60074A3BB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -52,6 +82,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1541F322BD7798900C5E36A /* RealmSwift in Frameworks */,
+				A1541F302BD7798900C5E36A /* Realm in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,13 +104,86 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A1541F2A2BD7679100C5E36A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A1541F332BDAA0EF00C5E36A /* DB */ = {
+			isa = PBXGroup;
+			children = (
+				A1541F342BDAA30A00C5E36A /* DB.swift */,
+				A1541F782BDD06F300C5E36A /* DB2.swift */,
+				A1541F7A2BDD0A0F00C5E36A /* DB3.swift */,
+				A1541F7C2BDD0A1A00C5E36A /* DB4.swift */,
+			);
+			path = DB;
+			sourceTree = "<group>";
+		};
+		A1541F5E2BDB7D9700C5E36A /* model */ = {
+			isa = PBXGroup;
+			children = (
+				A1541F5F2BDB7DBA00C5E36A /* Card.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		A1541F652BDBC96000C5E36A /* medecine */ = {
+			isa = PBXGroup;
+			children = (
+				A1541F5C2BDAB35000C5E36A /* addMedicine.swift */,
+				A1541F612BDBA81300C5E36A /* info_medicine.swift */,
+			);
+			path = medecine;
+			sourceTree = "<group>";
+		};
+		A1541F662BDBC98A00C5E36A /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				A1541F632BDBA8C700C5E36A /* Home.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		A1541F672BDBC9DA00C5E36A /* Hospital */ = {
+			isa = PBXGroup;
+			children = (
+				A1541F6B2BDBCEBD00C5E36A /* Hospital.swift */,
+				A1541F712BDC090B00C5E36A /* addHospital.swift */,
+			);
+			path = Hospital;
+			sourceTree = "<group>";
+		};
+		A1541F692BDBCA2600C5E36A /* allergy */ = {
+			isa = PBXGroup;
+			children = (
+				A1541F6D2BDBCEF400C5E36A /* allergy.swift */,
+				A1541F732BDCF5E600C5E36A /* addAllergy.swift */,
+			);
+			path = allergy;
+			sourceTree = "<group>";
+		};
+		A1541F6A2BDBCA4200C5E36A /* Medical_history */ = {
+			isa = PBXGroup;
+			children = (
+				A1541F6F2BDBCF1100C5E36A /* Medical_history.swift */,
+				A1541F752BDCF60900C5E36A /* AddMedical_history.swift */,
+			);
+			path = Medical_history;
+			sourceTree = "<group>";
+		};
 		C60266302BD435F60074A3BB = {
 			isa = PBXGroup;
 			children = (
+				A1541F5E2BDB7D9700C5E36A /* model */,
+				A1541F332BDAA0EF00C5E36A /* DB */,
 				C602663B2BD435F60074A3BB /* Okusuri.app */,
 				C602664D2BD435F70074A3BB /* Okusuri.appTests */,
 				C60266572BD435F70074A3BB /* Okusuri.appUITests */,
 				C602663A2BD435F60074A3BB /* Products */,
+				A1541F2A2BD7679100C5E36A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -95,6 +200,11 @@
 		C602663B2BD435F60074A3BB /* Okusuri.app */ = {
 			isa = PBXGroup;
 			children = (
+				A1541F6A2BDBCA4200C5E36A /* Medical_history */,
+				A1541F692BDBCA2600C5E36A /* allergy */,
+				A1541F672BDBC9DA00C5E36A /* Hospital */,
+				A1541F662BDBC98A00C5E36A /* Home */,
+				A1541F652BDBC96000C5E36A /* medecine */,
 				C602663C2BD435F60074A3BB /* Okusuri_appApp.swift */,
 				C602663E2BD435F60074A3BB /* ContentView.swift */,
 				C60266402BD435F70074A3BB /* Assets.xcassets */,
@@ -145,6 +255,10 @@
 			dependencies = (
 			);
 			name = Okusuri.app;
+			packageProductDependencies = (
+				A1541F2F2BD7798900C5E36A /* Realm */,
+				A1541F312BD7798900C5E36A /* RealmSwift */,
+			);
 			productName = Okusuri.app;
 			productReference = C60266392BD435F60074A3BB /* Okusuri.app.app */;
 			productType = "com.apple.product-type.application";
@@ -217,6 +331,9 @@
 				Base,
 			);
 			mainGroup = C60266302BD435F60074A3BB;
+			packageReferences = (
+				A1541F292BD7677A00C5E36A /* XCRemoteSwiftPackageReference "realm-swift" */,
+			);
 			productRefGroup = C602663A2BD435F60074A3BB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -260,7 +377,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				C602663F2BD435F60074A3BB /* ContentView.swift in Sources */,
+				A1541F762BDCF60900C5E36A /* AddMedical_history.swift in Sources */,
+				A1541F622BDBA81400C5E36A /* info_medicine.swift in Sources */,
 				C602663D2BD435F60074A3BB /* Okusuri_appApp.swift in Sources */,
+				A1541F6E2BDBCEF400C5E36A /* allergy.swift in Sources */,
+				A1541F742BDCF5E600C5E36A /* addAllergy.swift in Sources */,
+				A1541F792BDD06F300C5E36A /* DB2.swift in Sources */,
+				A1541F602BDB7DBA00C5E36A /* Card.swift in Sources */,
+				A1541F352BDAA30A00C5E36A /* DB.swift in Sources */,
+				A1541F7B2BDD0A0F00C5E36A /* DB3.swift in Sources */,
+				A1541F702BDBCF1100C5E36A /* Medical_history.swift in Sources */,
+				A1541F722BDC090B00C5E36A /* addHospital.swift in Sources */,
+				A1541F6C2BDBCEBD00C5E36A /* Hospital.swift in Sources */,
+				A1541F5D2BDAB35000C5E36A /* addMedicine.swift in Sources */,
+				A1541F7D2BDD0A1A00C5E36A /* DB4.swift in Sources */,
+				A1541F642BDBA8C700C5E36A /* Home.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -349,7 +480,9 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.4;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -404,7 +537,9 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -420,14 +555,17 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Okusuri.app/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -440,7 +578,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "mid.Okusuri-app";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -456,14 +595,17 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Okusuri.app/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -476,7 +618,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "mid.Okusuri-app";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -488,8 +631,10 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LC44DUDZWQ;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
 				MACOSX_DEPLOYMENT_TARGET = 14.4;
@@ -510,8 +655,10 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LC44DUDZWQ;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
 				MACOSX_DEPLOYMENT_TARGET = 14.4;
@@ -533,6 +680,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LC44DUDZWQ;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
 				MACOSX_DEPLOYMENT_TARGET = 14.4;
@@ -554,6 +702,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LC44DUDZWQ;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
 				MACOSX_DEPLOYMENT_TARGET = 14.4;
@@ -609,6 +758,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A1541F292BD7677A00C5E36A /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.49.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A1541F2F2BD7798900C5E36A /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A1541F292BD7677A00C5E36A /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = Realm;
+		};
+		A1541F312BD7798900C5E36A /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A1541F292BD7677A00C5E36A /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C60266312BD435F60074A3BB /* Project object */;
 }
