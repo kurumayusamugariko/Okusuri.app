@@ -1,24 +1,19 @@
 import SwiftUI
 import RealmSwift
 
-
-//medicineのデータベース操作
-class DB: ObservableObject{
-    
-    @Published var selectedDate: Date = Date()
+//アレルギーのデータベースの操作
+class DB5: ObservableObject{
     @Published var shouldNavigateToContentView = false
     
-    @Published var dates = ""
-    @Published var kind = ""
-    @Published var hospital_name = ""
-    @Published var explain = ""
-    @Published var times = ""
+    @Published var name = ""
+    @Published var birth = ""
+    @Published var blood = ""
     
     
     //realmに書き込む
-    @Published var cards : [Card] = []
+    @Published var cards : [Card5] = []
     
-    @Published var updateObject : Card?
+    @Published var updateObject : Card5?
     
     init() {
         fetchData()
@@ -30,9 +25,9 @@ class DB: ObservableObject{
                 return
             }
         
-        let results = dbRef.objects(Card.self)
+        let results = dbRef.objects(Card5.self)
         
-        self.cards = results.compactMap({(card) -> Card? in
+        self.cards = results.compactMap({(card) -> Card5? in
             return card
         })
             
@@ -43,11 +38,10 @@ class DB: ObservableObject{
     //realmを使えるように設定
     func addData(presentation: Binding<PresentationMode>) {
         
-        let card = Card()
-        card.dates = selectedDate
-        card.kind = kind
-        card.hospital_name = hospital_name
-        card.explain = explain
+        let card = Card5()
+        card.name = name
+        card.birth = birth
+        card.blood = blood
         
 //        print("dates:", selectedDate)
 //        print("kind:", kind)
@@ -67,7 +61,7 @@ class DB: ObservableObject{
         presentation.wrappedValue.dismiss()
     }
     
-    func deleteData(object: Card) {
+    func deleteData(object: Card5) {
         guard let dbRef = try? Realm() else { return }
         
         try? dbRef.write {

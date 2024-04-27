@@ -33,6 +33,7 @@ struct addMedicine: View {
                 .textFieldStyle(RoundedBorderTextFieldStyle())
                 .padding(.all)
             
+            
 //            Button("追加") {
 //                modelDB.addData(presentation: presentation)
 //            }

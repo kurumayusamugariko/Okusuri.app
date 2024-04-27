@@ -23,6 +23,8 @@
 		A1541F792BDD06F300C5E36A /* DB2.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1541F782BDD06F300C5E36A /* DB2.swift */; };
 		A1541F7B2BDD0A0F00C5E36A /* DB3.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1541F7A2BDD0A0F00C5E36A /* DB3.swift */; };
 		A1541F7D2BDD0A1A00C5E36A /* DB4.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1541F7C2BDD0A1A00C5E36A /* DB4.swift */; };
+		A1541F7F2BDD499800C5E36A /* Name.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1541F7E2BDD499800C5E36A /* Name.swift */; };
+		A1541F812BDD4BE300C5E36A /* DB5.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1541F802BDD4BE300C5E36A /* DB5.swift */; };
 		C602663D2BD435F60074A3BB /* Okusuri_appApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C602663C2BD435F60074A3BB /* Okusuri_appApp.swift */; };
 		C602663F2BD435F60074A3BB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C602663E2BD435F60074A3BB /* ContentView.swift */; };
 		C60266412BD435F70074A3BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C60266402BD435F70074A3BB /* Assets.xcassets */; };
@@ -64,6 +66,8 @@
 		A1541F782BDD06F300C5E36A /* DB2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DB2.swift; sourceTree = "<group>"; };
 		A1541F7A2BDD0A0F00C5E36A /* DB3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DB3.swift; sourceTree = "<group>"; };
 		A1541F7C2BDD0A1A00C5E36A /* DB4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DB4.swift; sourceTree = "<group>"; };
+		A1541F7E2BDD499800C5E36A /* Name.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Name.swift; sourceTree = "<group>"; };
+		A1541F802BDD4BE300C5E36A /* DB5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DB5.swift; sourceTree = "<group>"; };
 		C60266392BD435F60074A3BB /* Okusuri.app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Okusuri.app.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C602663C2BD435F60074A3BB /* Okusuri_appApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Okusuri_appApp.swift; sourceTree = "<group>"; };
 		C602663E2BD435F60074A3BB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -118,6 +122,7 @@
 				A1541F782BDD06F300C5E36A /* DB2.swift */,
 				A1541F7A2BDD0A0F00C5E36A /* DB3.swift */,
 				A1541F7C2BDD0A1A00C5E36A /* DB4.swift */,
+				A1541F802BDD4BE300C5E36A /* DB5.swift */,
 			);
 			path = DB;
 			sourceTree = "<group>";
@@ -143,6 +148,7 @@
 			isa = PBXGroup;
 			children = (
 				A1541F632BDBA8C700C5E36A /* Home.swift */,
+				A1541F7E2BDD499800C5E36A /* Name.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -379,10 +385,12 @@
 				C602663F2BD435F60074A3BB /* ContentView.swift in Sources */,
 				A1541F762BDCF60900C5E36A /* AddMedical_history.swift in Sources */,
 				A1541F622BDBA81400C5E36A /* info_medicine.swift in Sources */,
+				A1541F812BDD4BE300C5E36A /* DB5.swift in Sources */,
 				C602663D2BD435F60074A3BB /* Okusuri_appApp.swift in Sources */,
 				A1541F6E2BDBCEF400C5E36A /* allergy.swift in Sources */,
 				A1541F742BDCF5E600C5E36A /* addAllergy.swift in Sources */,
 				A1541F792BDD06F300C5E36A /* DB2.swift in Sources */,
+				A1541F7F2BDD499800C5E36A /* Name.swift in Sources */,
 				A1541F602BDB7DBA00C5E36A /* Card.swift in Sources */,
 				A1541F352BDAA30A00C5E36A /* DB.swift in Sources */,
 				A1541F7B2BDD0A0F00C5E36A /* DB3.swift in Sources */,

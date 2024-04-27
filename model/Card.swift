@@ -44,3 +44,11 @@ class Card4: Object, Identifiable {
     @objc dynamic var Allergy = ""
     @objc dynamic var kind = ""
 }
+
+
+//個人情報のデータベース
+class Card5: Object, Identifiable {
+    @objc dynamic var name = ""
+    @objc dynamic var birth = ""
+    @objc dynamic var blood = ""
+}
