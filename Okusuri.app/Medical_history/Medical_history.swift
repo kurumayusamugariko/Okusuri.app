@@ -9,7 +9,15 @@ import SwiftUI
 
 struct Medical_history: View {
     var body: some View {
-        Text("medical_history")
+        NavigationView {
+            NavigationLink{ AddMedical_history()} label:{
+                Text("追加")
+            } .foregroundColor(Color.white)
+                .padding(.all)
+                .background(.blue)
+                .cornerRadius(50.0)
+            
+        }
     }
 }
 

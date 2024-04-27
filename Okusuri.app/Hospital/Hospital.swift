@@ -9,7 +9,15 @@ import SwiftUI
 
 struct Hospital: View {
     var body: some View {
-        Text("Hospital")
+        NavigationView {
+            NavigationLink{ addHospital()} label:{
+                Text("追加")
+            } .foregroundColor(Color.white)
+                .padding(.all)
+                .background(.blue)
+                .cornerRadius(50.0)
+            
+        }
     }
 }
 

@@ -9,7 +9,15 @@ import SwiftUI
 
 struct allergy: View {
     var body: some View {
-        Text("Allergy")
+        NavigationView {
+            NavigationLink{ addAllergy()} label:{
+                Text("追加")
+            } .foregroundColor(Color.white)
+                .padding(.all)
+                .background(.blue)
+                .cornerRadius(50.0)
+            
+        }
     }
 }
 
