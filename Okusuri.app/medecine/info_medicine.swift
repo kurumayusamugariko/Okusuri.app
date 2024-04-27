@@ -58,15 +58,17 @@ struct info_medicine: View {
                             Text("説明:"+card.explain)
                             
                         }
-                        Divider()
-                            .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
-                            .contentShape(RoundedRectangle(cornerRadius: 10))
+                        .contentShape(RoundedRectangle(cornerRadius: 10))
                         .contextMenu(menuItems: {
                             Button(action: {modelData.deleteData(object: card)}, label: {
                                 Text("Delete")
                             })
                         })
+                        Divider()
+                            .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
+
                     }
+
                 }
                 
             }

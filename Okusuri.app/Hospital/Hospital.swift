@@ -69,13 +69,12 @@ struct Hospital: View {
                                     .multilineTextAlignment(.leading)
                             }
                         }
-                        Divider()
-                            .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)                        .contentShape(RoundedRectangle(cornerRadius: 10))
+                        .contentShape(RoundedRectangle(cornerRadius: 10))
                         .contextMenu(menuItems: {
                             Button(action: {
                                 cardToEdit = card // 編集するカードを設定
                                 isShowingEditMedicine = true // 編集画面を表示
-                         
+                                
                             }, label: {
                                 Text("編集")
                             })
@@ -86,11 +85,12 @@ struct Hospital: View {
                                     .multilineTextAlignment(.center)
                             })
                             Link(destination: URL(string: "tel:\(card.number)")!) {
-                            Text("電話をかける")
-                            Image(systemName: "phone").foregroundColor(.blue)
+                                Text("電話をかける")
+                                Image(systemName: "phone").foregroundColor(.blue)
                             }
                         })
-                        
+                        Divider()
+                            .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
                     }
                     
                 }

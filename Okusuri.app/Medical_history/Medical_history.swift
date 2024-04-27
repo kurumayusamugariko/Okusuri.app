@@ -49,22 +49,23 @@ struct Medical_history: View {
             ScrollView {
                 VStack(alignment: .leading) {
                     ForEach(modelData.cards) { card in
-                        Text(card.disease)
-                            .font(.title2)
-                            .fontWeight(.bold)
-                            .padding(/*@START_MENU_TOKEN@*/.top/*@END_MENU_TOKEN@*/)
-                        HStack {
-                            Text(self.dateFormatter.string(from: card.dates))
-                            Text(card.hospital_name)
-                        }
-                        Divider()
-                            .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
+                        VStack(alignment: .leading){
+                            Text(card.disease)
+                                .font(.title2)
+                                .fontWeight(.bold)
+                                .padding(/*@START_MENU_TOKEN@*/.top/*@END_MENU_TOKEN@*/)
+                            HStack {
+                                Text(self.dateFormatter.string(from: card.dates))
+                                Text(card.hospital_name)
+                            }}
                             .contentShape(RoundedRectangle(cornerRadius: 10))
                         .contextMenu(menuItems: {
                             Button(action: {modelData.deleteData(object: card)}, label: {
                                 Text("Delete")
                             })
                         })
+                        Divider()
+                            .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
                         
                     }
                 }

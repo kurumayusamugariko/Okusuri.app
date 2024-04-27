@@ -37,6 +37,7 @@ struct allergy: View {
                 }
             }
             .frame(width: /*@START_MENU_TOKEN@*/200.0/*@END_MENU_TOKEN@*/, height: /*@START_MENU_TOKEN@*/70.0/*@END_MENU_TOKEN@*/)
+            .padding(/*@START_MENU_TOKEN@*/.bottom/*@END_MENU_TOKEN@*/)
             
             ScrollView {
                 VStack(alignment: .leading) {
@@ -48,9 +49,7 @@ struct allergy: View {
                                 .fontWeight(.bold)
                                 .foregroundColor(Color(hue: 0.077, saturation: 0.657, brightness: 0.656))
                         }
-                        Divider()
-                            .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
-                            .contentShape(RoundedRectangle(cornerRadius: 10))
+                       .contentShape(RoundedRectangle(cornerRadius: 10))
                         .contextMenu(menuItems: {
                             Button(action: {modelData.deleteData(object: card)}, label: {
                                 Text("Delete")
@@ -59,7 +58,8 @@ struct allergy: View {
                                     .foregroundColor(Color(hue: 0.098, saturation: 0.922, brightness: 0.279))
                             })
                         })
-                        
+                        Divider()
+                            .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
                     }
                     
                 }
