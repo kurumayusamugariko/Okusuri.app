@@ -15,6 +15,10 @@ struct allergy: View {
     var body: some View {
         VStack {
             Text("アレルギーリスト")
+                .font(.title)
+                .fontWeight(.bold)
+                .foregroundColor(Color.black)
+                .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
             
             NavigationView {
                 Button(action: {
@@ -23,6 +27,7 @@ struct allergy: View {
                     Text("アレルギーを追加")
                         .foregroundColor(Color.white)
                         .padding(.all)
+                        .frame(width: /*@START_MENU_TOKEN@*/200.0/*@END_MENU_TOKEN@*/, height: /*@START_MENU_TOKEN@*/70.0/*@END_MENU_TOKEN@*/)
                         .background(.blue)
                         .cornerRadius(50.0)
                 }
@@ -30,25 +35,37 @@ struct allergy: View {
                     addAllergy(modelDB: modelData)
                 }
             }
+            .frame(width: /*@START_MENU_TOKEN@*/200.0/*@END_MENU_TOKEN@*/, height: /*@START_MENU_TOKEN@*/70.0/*@END_MENU_TOKEN@*/)
             
             ScrollView {
-                VStack {
+                VStack(alignment: .leading) {
                     ForEach(modelData.cards) { card in
                         HStack {
                             Text(card.Allergy)
+                                .font(.headline)
                             Text(card.kind)
+                                .fontWeight(.bold)
+                                .foregroundColor(Color(hue: 0.077, saturation: 0.657, brightness: 0.656))
                         }
                         .contentShape(RoundedRectangle(cornerRadius: 10))
                         .contextMenu(menuItems: {
                             Button(action: {modelData.deleteData(object: card)}, label: {
                                 Text("Delete")
+                                    .font(.body)
+                                    .fontWeight(.regular)
+                                    .foregroundColor(Color(hue: 0.098, saturation: 0.922, brightness: 0.279))
                             })
                         })
                         
-                    }.padding()
+                    }
+                    .padding(/*@START_MENU_TOKEN@*/.top/*@END_MENU_TOKEN@*/)
                 }
                 
+                
+                
             }
+            .padding(/*@START_MENU_TOKEN@*/.top/*@END_MENU_TOKEN@*/)
+            
 
         }
         .padding()

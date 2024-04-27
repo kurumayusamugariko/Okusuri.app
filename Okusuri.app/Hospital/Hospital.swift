@@ -20,11 +20,12 @@ struct Hospital: View {
     }()
     
     var body: some View {
-        VStack {
+        VStack(alignment: .center) {
             Text("病院一覧")
                 .font(.title)
                 .fontWeight(.bold)
                 .foregroundColor(Color(hue: 0.577, saturation: 0.631, brightness: 0.224))
+                .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
             
             NavigationView {
                 Button(action: {
@@ -49,26 +50,37 @@ struct Hospital: View {
             ScrollView {
                 VStack(alignment: .leading) {
                     ForEach(modelData.cards) { card in
-                        HStack {
-                            Text(self.dateFormatter.string(from: card.dates))
+                        VStack(alignment: .leading){
                             Text(card.name)
-                            Text(card.number)
-                                .multilineTextAlignment(.leading)
+                                .font(.title)
+                                .fontWeight(.semibold)
+                            HStack {
+                                Text("次回予約")
+                                    .font(.title2)
+                                Text(self.dateFormatter.string(from: card.dates))
+                            }
+                            HStack{
+                                Text("📞")
+                                Text(card.number)
+                                    .foregroundColor(Color.blue)
+                                    .multilineTextAlignment(.leading)
+                            }
                         }
+                        .padding(/*@START_MENU_TOKEN@*/[.top, .leading, .trailing]/*@END_MENU_TOKEN@*/)
                         .contentShape(RoundedRectangle(cornerRadius: 10))
                         .contextMenu(menuItems: {
-                            Button(action: {modelData.deleteData(object: card)}, label: {
-                                Text("削除")
-                                    .font(.title)
-                                    .foregroundColor(Color.red)
-                                    .multilineTextAlignment(.center)
-                            })
                             Button(action: {
                                 cardToEdit = card // 編集するカードを設定
                                 isShowingEditMedicine = true // 編集画面を表示
                          
                             }, label: {
                                 Text("編集")
+                            })
+                            Button(action: {modelData.deleteData(object: card)}, label: {
+                                Text("削除")
+                                    .font(.title)
+                                    .foregroundColor(Color.red)
+                                    .multilineTextAlignment(.center)
                             })
                             Link(destination: URL(string: "tel:\(card.number)")!) {
                             Text("電話をかける")
@@ -77,16 +89,17 @@ struct Hospital: View {
                         })
                         
                     }
-                    .padding(/*@START_MENU_TOKEN@*/.vertical/*@END_MENU_TOKEN@*/)
+                    
                 }
-                .padding(/*@START_MENU_TOKEN@*/.top/*@END_MENU_TOKEN@*/)
                 
-            }.sheet(isPresented: $isShowingEditMedicine) {
+                
+            }.padding(/*@START_MENU_TOKEN@*/.top/*@END_MENU_TOKEN@*/).sheet(isPresented: $isShowingEditMedicine) {
                 editHospital(modelDB: modelData, card: $cardToEdit)
             }
 
         }
-        .padding()
+        
+        
     }
 }
 

@@ -20,6 +20,10 @@ struct Medical_history: View {
     var body: some View {
         VStack {
             Text("病歴")
+                .font(.title)
+                .fontWeight(.bold)
+                .foregroundColor(Color.black)
+                .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
             
             NavigationView {
                 Button(action: {
@@ -28,20 +32,26 @@ struct Medical_history: View {
                     Text("病歴を追加")
                         .foregroundColor(Color.white)
                         .padding(.all)
+                        .frame(width: /*@START_MENU_TOKEN@*/200.0/*@END_MENU_TOKEN@*/, height: /*@START_MENU_TOKEN@*/70.0/*@END_MENU_TOKEN@*/)
                         .background(.blue)
                         .cornerRadius(50.0)
+
                 }
                 .sheet(isPresented: $isShowingAddMedicine) {
                     AddMedical_history(modelDB: modelData)
                 }
             }
+            .frame(width: /*@START_MENU_TOKEN@*/200.0/*@END_MENU_TOKEN@*/, height: 70)
             
             ScrollView {
-                VStack {
+                VStack(alignment: .leading) {
                     ForEach(modelData.cards) { card in
+                        Text(card.disease)
+                            .font(.title2)
+                            .fontWeight(.bold)
+                            .padding(/*@START_MENU_TOKEN@*/.top/*@END_MENU_TOKEN@*/)
                         HStack {
                             Text(self.dateFormatter.string(from: card.dates))
-                            Text(card.disease)
                             Text(card.hospital_name)
                         }
                         .contentShape(RoundedRectangle(cornerRadius: 10))
@@ -51,13 +61,14 @@ struct Medical_history: View {
                             })
                         })
                         
-                    }.padding()
+                    }
                 }
+                .padding(/*@START_MENU_TOKEN@*/.top/*@END_MENU_TOKEN@*/)
                 
             }
 
         }
-        .padding()
+        
     }
 }
 
