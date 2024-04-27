@@ -83,7 +83,8 @@ class DB3: ObservableObject{
             object.name = name
             object.number = number
             object.favorite = favorite
-            
+
+            fetchData()            
 //            print("dates:", object.dates)
 //            print("hospital_name:", object.name)
 //            print("phonenumber:",object.number)

@@ -20,7 +20,7 @@ struct AddMedical_history: View {
         Text("病歴を追加")
         
         VStack {
-            DatePicker("日付", selection: $selectedDate, displayedComponents: .date)
+            DatePicker("日付", selection: $modelDB.selectedDate, displayedComponents: .date)
                 .environment(\.locale, Locale(identifier: "ja_JP"))
                 .fixedSize()
             

@@ -49,7 +49,7 @@ class DB: ObservableObject{
         card.hospital_name = hospital_name
         card.explain = explain
         
-//        print("dates:", selectedDate)
+       print("dates:", selectedDate)
 //        print("kind:", kind)
 //        print("hospital_name:", hospital_name)
 //        print("explain:", explain)

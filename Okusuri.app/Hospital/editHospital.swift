@@ -22,7 +22,7 @@ struct editHospital: View {
     var body: some View {
         VStack {
             
-            DatePicker("次回の日付", selection: $selectedDate, displayedComponents: .date)
+            DatePicker("次回の日付", selection: $modelDB.selectedDate, displayedComponents: .date)
                 .environment(\.locale, Locale(identifier: "ja_JP"))
                 .fixedSize()
             
@@ -45,10 +45,9 @@ struct editHospital: View {
         }
         .onAppear {
             if let card = card {
-                selectedDate = card.dates
+                modelDB.selectedDate = card.dates
                 modelDB.name = card.name
                 modelDB.number = card.number
-                // 他のプロパティも同様に設定します
             }
         }
     }

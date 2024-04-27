@@ -20,7 +20,7 @@ struct addHospital: View {
     var body: some View {
         VStack {
             
-            DatePicker("日付", selection: $selectedDate, displayedComponents: .date)
+            DatePicker("日付", selection: $modelDB.selectedDate, displayedComponents: .date)
                 .environment(\.locale, Locale(identifier: "ja_JP"))
                 .fixedSize()
             
