@@ -32,10 +32,11 @@ struct Hospital: View {
                     isShowingAddMedicine = true // 追加ボタンがタップされた時に追加画面を表示
                 }) {
                     Text("病院を追加")
+                        .fontWeight(.bold)
                         .foregroundColor(Color.white)
                         .padding(.all)
                         .frame(width: /*@START_MENU_TOKEN@*/200.0/*@END_MENU_TOKEN@*/, height: /*@START_MENU_TOKEN@*/70.0/*@END_MENU_TOKEN@*/)
-                        .background(.blue)
+                        .background(/*@START_MENU_TOKEN@*/Color(hue: 0.318, saturation: 0.401, brightness: 0.698)/*@END_MENU_TOKEN@*/)
                         .cornerRadius(50.0)
                 }
                 .sheet(isPresented: $isShowingAddMedicine) {

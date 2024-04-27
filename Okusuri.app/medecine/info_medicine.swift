@@ -20,31 +20,40 @@ struct info_medicine: View {
     
     var body: some View {
         VStack {
-            Text("お薬リスト")
+            Text("お薬リスト").font(.title)
+                .fontWeight(.bold)
+                .foregroundColor(Color(hue: 0.577, saturation: 0.631, brightness: 0.224))
+                .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
             
             NavigationView {
                 Button(action: {
                     isShowingAddMedicine = true // 追加ボタンがタップされた時に追加画面を表示
                 }) {
                     Text("お薬を追加")
+                        .fontWeight(.bold)
                         .foregroundColor(Color.white)
                         .padding(.all)
-                        .background(.blue)
+                        .frame(width: /*@START_MENU_TOKEN@*/200.0/*@END_MENU_TOKEN@*/, height: /*@START_MENU_TOKEN@*/70.0/*@END_MENU_TOKEN@*/)
+                        .background(/*@START_MENU_TOKEN@*/Color(hue: 0.839, saturation: 0.388, brightness: 0.866)/*@END_MENU_TOKEN@*/)
                         .cornerRadius(50.0)
                 }
                 .sheet(isPresented: $isShowingAddMedicine) {
                     addMedicine(modelDB: modelData)
                 }
-            }
+            }.frame(width: /*@START_MENU_TOKEN@*/200.0/*@END_MENU_TOKEN@*/, height: 70)
             
             ScrollView {
-                VStack {
+                VStack(alignment: .leading) {
                     ForEach(modelData.cards) { card in
-                        HStack {
-                            Text(self.dateFormatter.string(from: card.dates))
+                        VStack{
                             Text(card.kind)
-                            Text(card.hospital_name)
-                            Text(card.explain)
+                                .font(.title3)
+                                .fontWeight(.bold)
+                            HStack {
+                                Text(card.hospital_name)
+                                Text("処方日:"+self.dateFormatter.string(from: card.dates))
+                            }
+                            Text("説明:"+card.explain)
                         }
                         .contentShape(RoundedRectangle(cornerRadius: 10))
                         .contextMenu(menuItems: {
@@ -53,10 +62,12 @@ struct info_medicine: View {
                             })
                         })
                         
-                    }.padding()
+                    }
                 }
                 
             }
+            .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
+            
 
         }
         .padding()

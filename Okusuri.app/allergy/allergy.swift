@@ -25,10 +25,11 @@ struct allergy: View {
                     isShowingAddMedicine = true // 追加ボタンがタップされた時に追加画面を表示
                 }) {
                     Text("アレルギーを追加")
+                        .fontWeight(.bold)
                         .foregroundColor(Color.white)
                         .padding(.all)
                         .frame(width: /*@START_MENU_TOKEN@*/200.0/*@END_MENU_TOKEN@*/, height: /*@START_MENU_TOKEN@*/70.0/*@END_MENU_TOKEN@*/)
-                        .background(.blue)
+                        .background(Color(hue: 0.161, saturation: 0.831, brightness: 0.794))
                         .cornerRadius(50.0)
                 }
                 .sheet(isPresented: $isShowingAddMedicine) {
