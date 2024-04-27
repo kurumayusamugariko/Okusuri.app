@@ -9,24 +9,26 @@ import SwiftUI
 
 struct addAllergy: View {
     @State var inputName = ""
+    @ObservedObject var modelDB : DB2
+    @Environment(\.presentationMode) var presentation
     
     var body: some View {
         VStack {
-            TextField("アレルギー項目を記入してください", text: $inputName)
+            TextField("アレルギー項目を記入してください", text: $modelDB.Allergy)
                 .textFieldStyle(RoundedBorderTextFieldStyle())
                 .padding(.all)
             
-            TextField("種類を選択してください", text: $inputName)
+            TextField("種類を選択してください", text: $modelDB.kind)
                 .textFieldStyle(RoundedBorderTextFieldStyle())
                 .padding(.all)
             
-            Button(action: {}, label: {
+            Button(action: {modelDB.addData(presentation: presentation)}, label: {
                 Text("追加")
             })
         }
     }
 }
 
-#Preview {
-    addAllergy()
-}
+//#Preview {
+//    addAllergy()
+//}

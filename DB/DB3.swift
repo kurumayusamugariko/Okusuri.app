@@ -3,21 +3,21 @@ import RealmSwift
 
 
 //medicineのデータベース操作
-class DB: ObservableObject{
+class DB3: ObservableObject{
     
     @Published var selectedDate: Date = Date()
     @Published var shouldNavigateToContentView = false
     
     @Published var dates = ""
-    @Published var kind = ""
-    @Published var hospital_name = ""
-    @Published var explain = ""
+    @Published var name = ""
+    @Published var number = ""
+    @Published var favorite = ""
     
     
     //realmに書き込む
-    @Published var cards : [Card] = []
+    @Published var cards : [Card2] = []
     
-    @Published var updateObject : Card?
+    @Published var updateObject : Card2?
     
     init() {
         fetchData()
@@ -29,9 +29,9 @@ class DB: ObservableObject{
                 return
             }
         
-        let results = dbRef.objects(Card.self)
+        let results = dbRef.objects(Card2.self)
         
-        self.cards = results.compactMap({(card) -> Card? in
+        self.cards = results.compactMap({(card) -> Card2? in
             return card
         })
             
@@ -42,11 +42,11 @@ class DB: ObservableObject{
     //realmを使えるように設定
     func addData(presentation: Binding<PresentationMode>) {
         
-        let card = Card()
+        let card = Card2()
         card.dates = selectedDate
-        card.kind = kind
-        card.hospital_name = hospital_name
-        card.explain = explain
+        card.name = name
+        card.number = number
+        card.favorite = favorite
         
 //        print("dates:", selectedDate)
 //        print("kind:", kind)
@@ -66,7 +66,7 @@ class DB: ObservableObject{
         presentation.wrappedValue.dismiss()
     }
     
-    func deleteData(object: Card) {
+    func deleteData(object: Card2) {
         guard let dbRef = try? Realm() else { return }
         
         try? dbRef.write {

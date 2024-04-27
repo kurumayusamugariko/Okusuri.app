@@ -8,35 +8,40 @@
 import SwiftUI
 
 struct addHospital: View {
-    @State var inputName = ""
+    @State var selectedDate: Date = Date()
+    
+    @ObservedObject var modelDB : DB3
+    @Environment(\.presentationMode) var presentation
+    
+    init(modelDB: DB3) {
+        self.modelDB = modelDB
+    }
     
     var body: some View {
         VStack {
             
+            DatePicker("日付", selection: $selectedDate, displayedComponents: .date)
+                .environment(\.locale, Locale(identifier: "ja_JP"))
+                .fixedSize()
             
-            
-            TextField("薬の正式名称を入力してください", text: $inputName)
+            TextField("病院名を記載してください", text: $modelDB.name)
                 .textFieldStyle(RoundedBorderTextFieldStyle())
                 .padding(.all)
             
-            TextField("病院名を入力してください", text: $inputName)
-                .textFieldStyle(RoundedBorderTextFieldStyle())
-                .padding(.all)
-            
-            TextField("薬の説明を入力してください", text: $inputName)
+            TextField("病院の電話番号を記載してください", text: $modelDB.number)
                 .textFieldStyle(RoundedBorderTextFieldStyle())
                 .padding(.all)
             
             //            Button("追加") {
             //                modelDB.addData(presentation: presentation)
             //            }
-            Button(action: {}, label: {
+            Button(action: {modelDB.addData(presentation: presentation)}, label: {
                 Text("追加")
             })
         }
     }
 }
 
-#Preview {
-    addHospital()
-}
+//#Preview {
+//    addHospital()
+//}
