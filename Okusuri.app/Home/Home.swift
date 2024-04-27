@@ -19,18 +19,18 @@ struct Home: View {
                         Text("誕生日")
                         Text("血液型")
                     } .padding(.all)
-                }.padding(.all).background(Color(hue: 0.611, saturation: 0.444, brightness: 1.0)).cornerRadius(/*@START_MENU_TOKEN@*/20.0/*@END_MENU_TOKEN@*/)
+                }.padding(.all).background(Color(hue: 0.611, saturation: 0.343, brightness: 1.0)).cornerRadius(/*@START_MENU_TOKEN@*/20.0/*@END_MENU_TOKEN@*/)
                 
                 
                 HStack {
                     
                     NavigationLink{ info_medicine()} label:{
                         Text("飲んでいるお薬")
-                    } .padding(.all, 10).frame(width: /*@START_MENU_TOKEN@*/170.0/*@END_MENU_TOKEN@*/, height: /*@START_MENU_TOKEN@*/170.0/*@END_MENU_TOKEN@*/).background(Color(hue: 0.611, saturation: 0.444, brightness: 1.0)).cornerRadius(/*@START_MENU_TOKEN@*/20.0/*@END_MENU_TOKEN@*/)
+                    } .padding(.all, 10).frame(width: /*@START_MENU_TOKEN@*/170.0/*@END_MENU_TOKEN@*/, height: /*@START_MENU_TOKEN@*/170.0/*@END_MENU_TOKEN@*/).background(Color(hue: 0.611, saturation: 0.343, brightness: 1.0)).cornerRadius(/*@START_MENU_TOKEN@*/20.0/*@END_MENU_TOKEN@*/)
                     
                     NavigationLink{ Hospital()} label:{
                         Text("病院一覧")
-                    } .padding(.all, 10).frame(width: /*@START_MENU_TOKEN@*/170.0/*@END_MENU_TOKEN@*/, height: /*@START_MENU_TOKEN@*/170.0/*@END_MENU_TOKEN@*/).background(Color(hue: 0.611, saturation: 0.444, brightness: 1.0)).cornerRadius(/*@START_MENU_TOKEN@*/20.0/*@END_MENU_TOKEN@*/)
+                    } .padding(.all, 10).frame(width: /*@START_MENU_TOKEN@*/170.0/*@END_MENU_TOKEN@*/, height: /*@START_MENU_TOKEN@*/170.0/*@END_MENU_TOKEN@*/).background(Color(hue: 0.611, saturation: 0.343, brightness: 1.0)).cornerRadius(/*@START_MENU_TOKEN@*/20.0/*@END_MENU_TOKEN@*/)
                 }
                 
                 
@@ -38,13 +38,13 @@ struct Home: View {
                     
                     NavigationLink{ Medical_history()} label:{
                         Text("病歴")
-                    } .padding(.all, 10).frame(width: /*@START_MENU_TOKEN@*/170.0/*@END_MENU_TOKEN@*/, height: /*@START_MENU_TOKEN@*/170.0/*@END_MENU_TOKEN@*/).background(Color(hue: 0.611, saturation: 0.444, brightness: 1.0)).cornerRadius(/*@START_MENU_TOKEN@*/20.0/*@END_MENU_TOKEN@*/)
+                    } .padding(.all, 10).frame(width: /*@START_MENU_TOKEN@*/170.0/*@END_MENU_TOKEN@*/, height: /*@START_MENU_TOKEN@*/170.0/*@END_MENU_TOKEN@*/).background(Color(hue: 0.611, saturation: 0.343, brightness: 1.0)).cornerRadius(/*@START_MENU_TOKEN@*/20.0/*@END_MENU_TOKEN@*/)
                     
                     
                     
                     NavigationLink{ allergy()} label:{
                         Text("アレルギー一覧")
-                    } .padding(.all, 10).frame(width: /*@START_MENU_TOKEN@*/170.0/*@END_MENU_TOKEN@*/, height: /*@START_MENU_TOKEN@*/170.0/*@END_MENU_TOKEN@*/).background(Color(hue: 0.611, saturation: 0.444, brightness: 1.0)).cornerRadius(/*@START_MENU_TOKEN@*/20.0/*@END_MENU_TOKEN@*/)
+                    } .padding(.all, 10).frame(width: /*@START_MENU_TOKEN@*/170.0/*@END_MENU_TOKEN@*/, height: /*@START_MENU_TOKEN@*/170.0/*@END_MENU_TOKEN@*/).background(Color(hue: 0.611, saturation: 0.343, brightness: 1.0)).cornerRadius(/*@START_MENU_TOKEN@*/20.0/*@END_MENU_TOKEN@*/)
                 }.padding(.bottom)
                 Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
                     Text("カスタマイズ")
