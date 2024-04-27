@@ -22,7 +22,7 @@ struct Hospital: View {
     }()
     
     var body: some View {
-        VStack(alignment: .center) {
+        VStack {
             Text("病院一覧")
                 .font(.title)
                 .fontWeight(.bold)
@@ -69,8 +69,8 @@ struct Hospital: View {
                                     .multilineTextAlignment(.leading)
                             }
                         }
-                        .padding(/*@START_MENU_TOKEN@*/[.top, .leading, .trailing]/*@END_MENU_TOKEN@*/)
-                        .contentShape(RoundedRectangle(cornerRadius: 10))
+                        Divider()
+                            .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)                        .contentShape(RoundedRectangle(cornerRadius: 10))
                         .contextMenu(menuItems: {
                             Button(action: {
                                 cardToEdit = card // 編集するカードを設定
@@ -94,9 +94,10 @@ struct Hospital: View {
                     }
                     
                 }
+                .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
                 
                 
-            }.padding(/*@START_MENU_TOKEN@*/.top/*@END_MENU_TOKEN@*/).sheet(isPresented: $isShowingEditMedicine) {
+            }.padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/).sheet(isPresented: $isShowingEditMedicine) {
                 editHospital(modelDB: modelData, card: $cardToEdit)
             }
 

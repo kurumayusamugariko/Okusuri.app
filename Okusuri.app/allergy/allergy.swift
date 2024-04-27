@@ -48,7 +48,9 @@ struct allergy: View {
                                 .fontWeight(.bold)
                                 .foregroundColor(Color(hue: 0.077, saturation: 0.657, brightness: 0.656))
                         }
-                        .contentShape(RoundedRectangle(cornerRadius: 10))
+                        Divider()
+                            .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
+                            .contentShape(RoundedRectangle(cornerRadius: 10))
                         .contextMenu(menuItems: {
                             Button(action: {modelData.deleteData(object: card)}, label: {
                                 Text("Delete")
@@ -59,17 +61,17 @@ struct allergy: View {
                         })
                         
                     }
-                    .padding(/*@START_MENU_TOKEN@*/.top/*@END_MENU_TOKEN@*/)
+                    
                 }
                 
                 
                 
             }
-            .padding(/*@START_MENU_TOKEN@*/.top/*@END_MENU_TOKEN@*/)
+            .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
             
-
         }
-        .padding()
+        .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
+        
     }
 }
 

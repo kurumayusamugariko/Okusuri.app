@@ -57,7 +57,9 @@ struct Medical_history: View {
                             Text(self.dateFormatter.string(from: card.dates))
                             Text(card.hospital_name)
                         }
-                        .contentShape(RoundedRectangle(cornerRadius: 10))
+                        Divider()
+                            .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
+                            .contentShape(RoundedRectangle(cornerRadius: 10))
                         .contextMenu(menuItems: {
                             Button(action: {modelData.deleteData(object: card)}, label: {
                                 Text("Delete")
@@ -66,11 +68,13 @@ struct Medical_history: View {
                         
                     }
                 }
-                .padding(/*@START_MENU_TOKEN@*/.top/*@END_MENU_TOKEN@*/)
+                
                 
             }
+            .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
 
         }
+        .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
         
     }
 }

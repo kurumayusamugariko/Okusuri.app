@@ -47,7 +47,7 @@ struct info_medicine: View {
             ScrollView {
                 VStack(alignment: .leading) {
                     ForEach(modelData.cards) { card in
-                        VStack{
+                        VStack(alignment: .leading){
                             Text(card.kind)
                                 .font(.title3)
                                 .fontWeight(.bold)
@@ -56,14 +56,16 @@ struct info_medicine: View {
                                 Text("処方日:"+self.dateFormatter.string(from: card.dates))
                             }
                             Text("説明:"+card.explain)
+                            
                         }
-                        .contentShape(RoundedRectangle(cornerRadius: 10))
+                        Divider()
+                            .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
+                            .contentShape(RoundedRectangle(cornerRadius: 10))
                         .contextMenu(menuItems: {
                             Button(action: {modelData.deleteData(object: card)}, label: {
                                 Text("Delete")
                             })
                         })
-                        
                     }
                 }
                 
