@@ -77,6 +77,6 @@ struct Home: View {
     }
 }
     
-    //#Preview {
-    //    Home()
-    //}
+    #Preview {
+        Home()
+    }
