@@ -22,7 +22,7 @@ struct info_medicine: View {
     
     var body: some View {
         VStack {
-            Text("お薬リスト").font(.title)
+            Text("お薬一覧").font(.title)
                 .fontWeight(.bold)
                 .foregroundColor(Color(hue: 0.577, saturation: 0.631, brightness: 0.224))
                 .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
